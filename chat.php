@@ -74,7 +74,7 @@ $json = json_decode($response, true); // JSON形式のレスポンスをPHPの�
 // print_r($json);
 // echo "</pre>";
 // exit();
-if(isset($json['error'])) { // レスポンスにエラーが含まれている場合
+if (isset($json['error'])) { // レスポンスにエラーが含まれている場合
   echo '(エラー)' . htmlspecialchars($json['error']['message'], ENT_QUOTES, 'UTF-8');
   exit;
 }
